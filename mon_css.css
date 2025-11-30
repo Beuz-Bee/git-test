@@ -1,0 +1,69 @@
+body {
+    background-color: #fddfcc;
+}
+
+h2 {
+    text-align: center;
+    color:rgb(21, 21, 21);
+}
+
+p {
+    color: rgb(21, 21, 21);
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;          /* retour à la ligne automatique */
+  gap: 20px;                /* espace entre les box */
+  justify-content: center;  /* centre le tout */
+}
+
+.box {
+  flex: 1 1 calc(33.33% - 40px); /* 3 par ligne, avec marge */
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background: #c08e6d;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+a {
+  color: #ff9a1e;         /* couleur des liens */
+  text-decoration: none;  /* supprime le soulignement */
+}
+
+a:hover {
+  color: #c08e6d;         /* couleur quand on survole */
+  text-decoration: underline; /* ou none si tu veux aucun effet */
+}
+
+a:visited {
+  color: #551a8b;         /* couleur des liens déjà visités */
+}
+
+a:active {
+  color: #cc0000;         /* couleur quand on clique */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0px 2px 2px 2px
+  rgba(0, 0, 0, 0.088);
+  border-radius: 7px;
+}
+
+li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
